@@ -110,5 +110,14 @@ public class LoginForm extends JDialog{
 
     public static void main(String[] args) {
         LoginForm loginForm = new LoginForm(null);
+        User user = loginForm.user;
+        if (user != null) {
+            System.out.println("Successful Authentication of: " + user.name);
+            System.out.println("Email: " + user.email);
+            System.out.println("Phone: " + user.email);
+            System.out.println("Address: " + user.phone);
+        }else {
+            System.out.println("Authentication cancelled");
+        }
     }
 }

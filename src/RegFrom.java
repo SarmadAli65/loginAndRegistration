@@ -85,7 +85,7 @@ public class RegFrom extends JDialog{
         User user = null;
         final String DB_URL = "jdbc:mysql://127.0.0.1:3306/user_schema";
         final String USERNAME = "root";
-        final String PASSWORD = "Saxonroad786!";
+        final String PASSWORD = "Mysql123!";
 
         /*
         import the classes to connect to the database

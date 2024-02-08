@@ -24,7 +24,7 @@ public class LoginForm extends JDialog{
         setModal(true);
         setLocationRelativeTo(owner);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        setVisible(true);
+
 
         /*
         below is the method that will operate when the "ok" button is pressed
@@ -52,6 +52,18 @@ public class LoginForm extends JDialog{
                 }
             }
         });
+        btnCancel.addActionListener(new ActionListener() {
+
+            /*
+            the method that will execute when the "cancel" button is pressed
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });
+
+        setVisible(true);
     }
 
     /*
